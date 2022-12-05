@@ -1,3 +1,3 @@
 #requirements.txt
-snowflake-connector-python
-pyarrow 
+snowflake-connector-python[pandas]
+
