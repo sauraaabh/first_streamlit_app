@@ -31,3 +31,4 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # shows dataframe as a table. 
 streamlit.dataframe(fruityvice_normalized)
 import snowflake.connector;
+# adding pyarrow 8.0.0
