@@ -44,10 +44,6 @@ except URLError as e:
 # below line flattens json i.e json_normalize()
 # shows dataframe as a table. 
 
-
-#don't run anything past here
-streamlit.stop()
-
 #import snowflake.connector
 
 streamlit.header("The fruit load list contains: ")
@@ -62,6 +58,8 @@ if streamlit.button('Get  Fruit Load List '):
     my_data_rows = get_fruit_load_list()
     streamlit.dataframe(my_data_rows)
 
+    #don't run anything past here
+streamlit.stop()
 
 # New section to display api response
 
